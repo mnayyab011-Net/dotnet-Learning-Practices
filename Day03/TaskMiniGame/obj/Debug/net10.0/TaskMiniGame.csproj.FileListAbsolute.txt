@@ -1,0 +1,15 @@
+/workspaces/dotnet-learning-log/Day03/TaskMiniGame/bin/Debug/net10.0/TaskMiniGame
+/workspaces/dotnet-learning-log/Day03/TaskMiniGame/bin/Debug/net10.0/TaskMiniGame.deps.json
+/workspaces/dotnet-learning-log/Day03/TaskMiniGame/bin/Debug/net10.0/TaskMiniGame.runtimeconfig.json
+/workspaces/dotnet-learning-log/Day03/TaskMiniGame/bin/Debug/net10.0/TaskMiniGame.dll
+/workspaces/dotnet-learning-log/Day03/TaskMiniGame/bin/Debug/net10.0/TaskMiniGame.pdb
+/workspaces/dotnet-learning-log/Day03/TaskMiniGame/obj/Debug/net10.0/TaskMiniGame.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/dotnet-learning-log/Day03/TaskMiniGame/obj/Debug/net10.0/TaskMiniGame.AssemblyInfoInputs.cache
+/workspaces/dotnet-learning-log/Day03/TaskMiniGame/obj/Debug/net10.0/TaskMiniGame.AssemblyInfo.cs
+/workspaces/dotnet-learning-log/Day03/TaskMiniGame/obj/Debug/net10.0/TaskMiniGame.csproj.CoreCompileInputs.cache
+/workspaces/dotnet-learning-log/Day03/TaskMiniGame/obj/Debug/net10.0/TaskMiniGame.sourcelink.json
+/workspaces/dotnet-learning-log/Day03/TaskMiniGame/obj/Debug/net10.0/TaskMiniGame.dll
+/workspaces/dotnet-learning-log/Day03/TaskMiniGame/obj/Debug/net10.0/refint/TaskMiniGame.dll
+/workspaces/dotnet-learning-log/Day03/TaskMiniGame/obj/Debug/net10.0/TaskMiniGame.pdb
+/workspaces/dotnet-learning-log/Day03/TaskMiniGame/obj/Debug/net10.0/TaskMiniGame.genruntimeconfig.cache
+/workspaces/dotnet-learning-log/Day03/TaskMiniGame/obj/Debug/net10.0/ref/TaskMiniGame.dll

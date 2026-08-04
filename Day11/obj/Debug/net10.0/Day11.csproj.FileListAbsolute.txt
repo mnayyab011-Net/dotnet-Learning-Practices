@@ -1,0 +1,5 @@
+/workspaces/dotnet-learning-log/Day11/obj/Debug/net10.0/Day11.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/dotnet-learning-log/Day11/obj/Debug/net10.0/Day11.AssemblyInfoInputs.cache
+/workspaces/dotnet-learning-log/Day11/obj/Debug/net10.0/Day11.AssemblyInfo.cs
+/workspaces/dotnet-learning-log/Day11/obj/Debug/net10.0/Day11.csproj.CoreCompileInputs.cache
+/workspaces/dotnet-learning-log/Day11/obj/Debug/net10.0/Day11.sourcelink.json

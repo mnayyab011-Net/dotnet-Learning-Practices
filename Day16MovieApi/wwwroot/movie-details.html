@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Details</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>Movie Details</h1>
+<a href="index.html"><button>Back</button></a>
+</header>
+<main id="movieDetails"></main>
+<script>
+const apiUrl="/api/movies";
+const id=new URLSearchParams(window.location.search).get("id");
+async function loadMovie(){
+const response=await fetch(`${apiUrl}/${id}`);
+const movie=await response.json();
+document.getElementById("movieDetails").innerHTML=`
+<div class="movie-card">
+<img src="${movie.posterUrl}">
+<h2>${movie.title}</h2>
+<p>${movie.description}</p>
+<p>Director: ${movie.director}</p>
+<p>Genre: ${movie.genre}</p>
+<p>Year: ${movie.releaseYear}</p>
+<p>Duration: ${movie.durationMinutes} Minutes</p>
+<p>Language: ${movie.language}</p>
+=
+<p>Rating: ⭐ ${movie.rating}</p>
+<a href="edit-movie.html?id=${movie.id}">
+<button>Edit</button>
+</a>
+</div>
+`;
+}
+loadMovie();
+</script>
+</body>
+</html>
