@@ -1,0 +1,15 @@
+/workspaces/dotnet-learning-log/Day08/MainTask/obj/Debug/net10.0/Task.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/dotnet-learning-log/Day08/MainTask/obj/Debug/net10.0/Task.AssemblyInfoInputs.cache
+/workspaces/dotnet-learning-log/Day08/MainTask/obj/Debug/net10.0/Task.AssemblyInfo.cs
+/workspaces/dotnet-learning-log/Day08/MainTask/obj/Debug/net10.0/Task.csproj.CoreCompileInputs.cache
+/workspaces/dotnet-learning-log/Day08/MainTask/obj/Debug/net10.0/Task.sourcelink.json
+/workspaces/dotnet-learning-log/Day08/MainTask/bin/Debug/net10.0/Task
+/workspaces/dotnet-learning-log/Day08/MainTask/bin/Debug/net10.0/Task.deps.json
+/workspaces/dotnet-learning-log/Day08/MainTask/bin/Debug/net10.0/Task.runtimeconfig.json
+/workspaces/dotnet-learning-log/Day08/MainTask/bin/Debug/net10.0/Task.dll
+/workspaces/dotnet-learning-log/Day08/MainTask/bin/Debug/net10.0/Task.pdb
+/workspaces/dotnet-learning-log/Day08/MainTask/obj/Debug/net10.0/Task.dll
+/workspaces/dotnet-learning-log/Day08/MainTask/obj/Debug/net10.0/refint/Task.dll
+/workspaces/dotnet-learning-log/Day08/MainTask/obj/Debug/net10.0/Task.pdb
+/workspaces/dotnet-learning-log/Day08/MainTask/obj/Debug/net10.0/Task.genruntimeconfig.cache
+/workspaces/dotnet-learning-log/Day08/MainTask/obj/Debug/net10.0/ref/Task.dll
