@@ -1,0 +1,15 @@
+/workspaces/dotnet-learning-log/Day11/Practices06/obj/Debug/net10.0/Practices06.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/dotnet-learning-log/Day11/Practices06/obj/Debug/net10.0/Practices06.AssemblyInfoInputs.cache
+/workspaces/dotnet-learning-log/Day11/Practices06/obj/Debug/net10.0/Practices06.AssemblyInfo.cs
+/workspaces/dotnet-learning-log/Day11/Practices06/obj/Debug/net10.0/Practices06.csproj.CoreCompileInputs.cache
+/workspaces/dotnet-learning-log/Day11/Practices06/obj/Debug/net10.0/Practices06.sourcelink.json
+/workspaces/dotnet-learning-log/Day11/Practices06/bin/Debug/net10.0/Practices06
+/workspaces/dotnet-learning-log/Day11/Practices06/bin/Debug/net10.0/Practices06.deps.json
+/workspaces/dotnet-learning-log/Day11/Practices06/bin/Debug/net10.0/Practices06.runtimeconfig.json
+/workspaces/dotnet-learning-log/Day11/Practices06/bin/Debug/net10.0/Practices06.dll
+/workspaces/dotnet-learning-log/Day11/Practices06/bin/Debug/net10.0/Practices06.pdb
+/workspaces/dotnet-learning-log/Day11/Practices06/obj/Debug/net10.0/Practices06.dll
+/workspaces/dotnet-learning-log/Day11/Practices06/obj/Debug/net10.0/refint/Practices06.dll
+/workspaces/dotnet-learning-log/Day11/Practices06/obj/Debug/net10.0/Practices06.pdb
+/workspaces/dotnet-learning-log/Day11/Practices06/obj/Debug/net10.0/Practices06.genruntimeconfig.cache
+/workspaces/dotnet-learning-log/Day11/Practices06/obj/Debug/net10.0/ref/Practices06.dll
