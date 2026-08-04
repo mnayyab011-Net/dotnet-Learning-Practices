@@ -1,0 +1,15 @@
+/workspaces/dotnet-learning-log/Day05/obj/Debug/net10.0/Day05.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/dotnet-learning-log/Day05/obj/Debug/net10.0/Day05.AssemblyInfoInputs.cache
+/workspaces/dotnet-learning-log/Day05/obj/Debug/net10.0/Day05.AssemblyInfo.cs
+/workspaces/dotnet-learning-log/Day05/obj/Debug/net10.0/Day05.csproj.CoreCompileInputs.cache
+/workspaces/dotnet-learning-log/Day05/obj/Debug/net10.0/Day05.sourcelink.json
+/workspaces/dotnet-learning-log/Day05/bin/Debug/net10.0/Day05
+/workspaces/dotnet-learning-log/Day05/bin/Debug/net10.0/Day05.deps.json
+/workspaces/dotnet-learning-log/Day05/bin/Debug/net10.0/Day05.runtimeconfig.json
+/workspaces/dotnet-learning-log/Day05/bin/Debug/net10.0/Day05.dll
+/workspaces/dotnet-learning-log/Day05/bin/Debug/net10.0/Day05.pdb
+/workspaces/dotnet-learning-log/Day05/obj/Debug/net10.0/Day05.dll
+/workspaces/dotnet-learning-log/Day05/obj/Debug/net10.0/refint/Day05.dll
+/workspaces/dotnet-learning-log/Day05/obj/Debug/net10.0/Day05.pdb
+/workspaces/dotnet-learning-log/Day05/obj/Debug/net10.0/Day05.genruntimeconfig.cache
+/workspaces/dotnet-learning-log/Day05/obj/Debug/net10.0/ref/Day05.dll
