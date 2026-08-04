@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit Movie</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>Edit Movie</h1>
+<a href="index.html"><button>Back</button></a>
+</header>
+<main>
+<form id="movieForm">
+<input id="title" placeholder="Movie Title" required>
+<textarea id="description" placeholder="Description"></textarea>
+<input id="director" placeholder="Director">
+<input id="genre" placeholder="Genre">
+<input type="number" id="releaseYear" placeholder="Release Year">
+<input type="number" id="durationMinutes" placeholder="Duration Minutes">
+<input id="language" placeholder="Language">
+<input type="number" step="0.1" id="rating" placeholder="Rating">
+<input id="posterUrl" placeholder="Poster URL">
+<button type="submit">Update Movie</button>
+</form>
+</main>
+<script>
+const apiUrl="/api/movies";
+const id=new URLSearchParams(window.location.search).get("id");
+async function loadMovie(){
+const response=await fetch(`${apiUrl}/${id}`);
+const movie=await response.json();
+title.value=movie.title;
+description.value=movie.description;
+director.value=movie.director;
+genre.value=movie.genre;
+releaseYear.value=movie.releaseYear;
+durationMinutes.value=movie.durationMinutes;
+language.value=movie.language;
+rating.value=movie.rating;
+posterUrl.value=movie.posterUrl;
+}
+movieForm.addEventListener("submit",async(e)=>{
+e.preventDefault();
+const movie={
+title:title.value,
+description:description.value,
+director:director.value,
+genre:genre.value,
+releaseYear:Number(releaseYear.value),
+durationMinutes:Number(durationMinutes.value),
+language:language.value,
+rating:Number(rating.value),
+posterUrl:posterUrl.value
+};
+await fetch(`${apiUrl}/${id}`,{
+method:"PUT",
+headers:{
+"Content-Type":"application/json"
+},
+body:JSON.stringify(movie)
+});
+alert("Movie Updated");
+window.location.href="index.html";
+});
+loadMovie();
+</script>
+</body>
+</html>
