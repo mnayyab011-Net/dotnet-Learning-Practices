@@ -1,0 +1,15 @@
+/workspaces/dotnet-learning-log/Day02/VariableAndOperators/bin/Debug/net10.0/VariableAndOperators
+/workspaces/dotnet-learning-log/Day02/VariableAndOperators/bin/Debug/net10.0/VariableAndOperators.deps.json
+/workspaces/dotnet-learning-log/Day02/VariableAndOperators/bin/Debug/net10.0/VariableAndOperators.runtimeconfig.json
+/workspaces/dotnet-learning-log/Day02/VariableAndOperators/bin/Debug/net10.0/VariableAndOperators.dll
+/workspaces/dotnet-learning-log/Day02/VariableAndOperators/bin/Debug/net10.0/VariableAndOperators.pdb
+/workspaces/dotnet-learning-log/Day02/VariableAndOperators/obj/Debug/net10.0/VariableAndOperators.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/dotnet-learning-log/Day02/VariableAndOperators/obj/Debug/net10.0/VariableAndOperators.AssemblyInfoInputs.cache
+/workspaces/dotnet-learning-log/Day02/VariableAndOperators/obj/Debug/net10.0/VariableAndOperators.AssemblyInfo.cs
+/workspaces/dotnet-learning-log/Day02/VariableAndOperators/obj/Debug/net10.0/VariableAndOperators.csproj.CoreCompileInputs.cache
+/workspaces/dotnet-learning-log/Day02/VariableAndOperators/obj/Debug/net10.0/VariableAndOperators.sourcelink.json
+/workspaces/dotnet-learning-log/Day02/VariableAndOperators/obj/Debug/net10.0/VariableAndOperators.dll
+/workspaces/dotnet-learning-log/Day02/VariableAndOperators/obj/Debug/net10.0/refint/VariableAndOperators.dll
+/workspaces/dotnet-learning-log/Day02/VariableAndOperators/obj/Debug/net10.0/VariableAndOperators.pdb
+/workspaces/dotnet-learning-log/Day02/VariableAndOperators/obj/Debug/net10.0/VariableAndOperators.genruntimeconfig.cache
+/workspaces/dotnet-learning-log/Day02/VariableAndOperators/obj/Debug/net10.0/ref/VariableAndOperators.dll
