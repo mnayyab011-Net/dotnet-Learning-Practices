@@ -1,3 +1,6 @@
+@{
+    Layout = null;
+}
 @model LoginWebsite.Models.LoginModel
 @{
     ViewData["Title"] = "Sign in";
@@ -33,10 +36,13 @@
                 Sign in
             </button>
         </form>
-        <p class="bottom-text">
+       <div class="bottom-text">
             Don't have an account?
-            <a href="#">Create one!</a>
-        </p>
+            <a asp-controller="Account"
+               asp-action="Register">
+                Create one!
+            </a>
+        </div>
     </div>
 </body>
 </html>
