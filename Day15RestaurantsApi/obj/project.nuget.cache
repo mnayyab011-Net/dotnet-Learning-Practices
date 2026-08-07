@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SPx/fNzk4D8=",
+  "dgSpecHash": "6qY5GlkEwkA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\DELL\\Desktop\\dotnet-core-practice\\Day15RestaurantsApi\\RestaurantsApi.csproj",
+  "projectFilePath": "C:\\Users\\DELL\\Desktop\\dotnet-Learning-Practices\\Day15RestaurantsApi\\RestaurantsApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.10\\microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512",

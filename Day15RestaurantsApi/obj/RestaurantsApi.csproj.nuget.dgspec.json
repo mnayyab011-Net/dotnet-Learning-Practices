@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\dotnet-core-practice\\Day15RestaurantsApi\\RestaurantsApi.csproj": {}
+    "C:\\Users\\DELL\\Desktop\\dotnet-Learning-Practices\\Day15RestaurantsApi\\RestaurantsApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\dotnet-core-practice\\Day15RestaurantsApi\\RestaurantsApi.csproj": {
+    "C:\\Users\\DELL\\Desktop\\dotnet-Learning-Practices\\Day15RestaurantsApi\\RestaurantsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\dotnet-core-practice\\Day15RestaurantsApi\\RestaurantsApi.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\dotnet-Learning-Practices\\Day15RestaurantsApi\\RestaurantsApi.csproj",
         "projectName": "RestaurantsApi",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\dotnet-core-practice\\Day15RestaurantsApi\\RestaurantsApi.csproj",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\dotnet-Learning-Practices\\Day15RestaurantsApi\\RestaurantsApi.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\dotnet-core-practice\\Day15RestaurantsApi\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\dotnet-Learning-Practices\\Day15RestaurantsApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

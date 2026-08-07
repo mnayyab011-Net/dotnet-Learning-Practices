@@ -9,7 +9,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")));
         var App = builder.Build();
-        if (App.Environment.IsDevelopment())
+       if (App.Environment.IsDevelopment())
 {
     App.UseSwagger();
     App.UseSwaggerUI();
