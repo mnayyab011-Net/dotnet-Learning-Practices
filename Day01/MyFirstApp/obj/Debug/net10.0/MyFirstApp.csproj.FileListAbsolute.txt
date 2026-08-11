@@ -1,0 +1,15 @@
+/workspaces/dotnet-learning-log/MyFirstApp/bin/Debug/net10.0/MyFirstApp
+/workspaces/dotnet-learning-log/MyFirstApp/bin/Debug/net10.0/MyFirstApp.deps.json
+/workspaces/dotnet-learning-log/MyFirstApp/bin/Debug/net10.0/MyFirstApp.runtimeconfig.json
+/workspaces/dotnet-learning-log/MyFirstApp/bin/Debug/net10.0/MyFirstApp.dll
+/workspaces/dotnet-learning-log/MyFirstApp/bin/Debug/net10.0/MyFirstApp.pdb
+/workspaces/dotnet-learning-log/MyFirstApp/obj/Debug/net10.0/MyFirstApp.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/dotnet-learning-log/MyFirstApp/obj/Debug/net10.0/MyFirstApp.AssemblyInfoInputs.cache
+/workspaces/dotnet-learning-log/MyFirstApp/obj/Debug/net10.0/MyFirstApp.AssemblyInfo.cs
+/workspaces/dotnet-learning-log/MyFirstApp/obj/Debug/net10.0/MyFirstApp.csproj.CoreCompileInputs.cache
+/workspaces/dotnet-learning-log/MyFirstApp/obj/Debug/net10.0/MyFirstApp.sourcelink.json
+/workspaces/dotnet-learning-log/MyFirstApp/obj/Debug/net10.0/MyFirstApp.dll
+/workspaces/dotnet-learning-log/MyFirstApp/obj/Debug/net10.0/refint/MyFirstApp.dll
+/workspaces/dotnet-learning-log/MyFirstApp/obj/Debug/net10.0/MyFirstApp.pdb
+/workspaces/dotnet-learning-log/MyFirstApp/obj/Debug/net10.0/MyFirstApp.genruntimeconfig.cache
+/workspaces/dotnet-learning-log/MyFirstApp/obj/Debug/net10.0/ref/MyFirstApp.dll
