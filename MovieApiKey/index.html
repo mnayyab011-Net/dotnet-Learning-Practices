@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NewsHub - Latest News</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">NewsHub</div>
+
+        <nav>
+            <button onclick="loadNews('general')">General</button>
+            <button onclick="loadNews('technology')">Technology</button>
+            <button onclick="loadNews('business')">Business</button>
+            <button onclick="loadNews('sports')">Sports</button>
+            <button onclick="loadNews('entertainment')">Entertainment</button>
+            <button onclick="loadNews('science')">Science</button>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1>Latest News</h1>
+
+        <p>
+            Stay updated with the latest headlines from around the world.
+        </p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search news..."
+            >
+
+            <button onclick="searchNews()">
+                Search
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- Loading -->
+    <div id="loading">
+        Loading news...
+    </div>
+
+
+    <!-- Error -->
+    <div id="error"></div>
+
+
+    <!-- News -->
+    <main id="newsContainer"></main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
