@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Product Management System</h1>
+<div id="products" class="container"></div>
+<script>
+async function loadProducts(){
+    let response = await fetch('/api/Products');
+    let products = await response.json();
+    let container = document.getElementById("products");
+    container.innerHTML="";
+    products.forEach(product=>{
+        container.innerHTML += `
+        <div class="card">
+            <h2>${product.name}</h2>
+            <p>Category: ${product.category}</p>
+            <h3>Price: ${product.price}</h3>
+            <button>Buy Now</button>
+        </div>
+        `;
+    });
+}
+loadProducts();
+</script>
+</body>
+</html>
