@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Movie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>➕ Add New Movie</h1>
+    <a href="index.html">
+        <button>Back</button>
+    </a>
+</header>
+<main>
+<form id="movieForm">
+<input type="text" id="title" placeholder="Movie Title" required>
+<textarea id="description" placeholder="Description"></textarea>
+<input type="text" id="director" placeholder="Director">
+<input type="text" id="genre" placeholder="Genre">
+<input type="number" id="releaseYear" placeholder="Release Year">
+<input type="number" id="durationMinutes" placeholder="Duration Minutes">
+<input type="text" id="language" placeholder="Language">
+<input type="number" step="0.1" id="rating" placeholder="Rating">
+<input type="text" id="posterUrl" placeholder="Poster Image URL">
+<button type="submit">
+    Save Movie
+</button>
+</form>
+</main>
+<script>
+const apiUrl = "/api/movies";
+document
+.getElementById("movieForm")
+.addEventListener("submit", async function(e){
+    e.preventDefault();
+    const movie = {
+        title: document.getElementById("title").value,
+        description: document.getElementById("description").value,
+        director: document.getElementById("director").value,
+        genre: document.getElementById("genre").value,
+        releaseYear: Number(
+            document.getElementById("releaseYear").value
+        ),
+        durationMinutes: Number(
+            document.getElementById("durationMinutes").value
+        ),
+          language: document.getElementById("language").value,
+        rating: Number(
+            document.getElementById("rating").value
+        ),
+        posterUrl: document.getElementById("posterUrl").value
+    };
+    await fetch(apiUrl,{
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify(movie)
+    });
+    alert("Movie Added Successfully");
+    window.location.href="index.html";
+});
+</script>
+</body>
+</html>
