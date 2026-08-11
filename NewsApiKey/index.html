@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MovieHub - Find Movies</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            🎬 MovieHub
+        </div>
+
+        <nav>
+            <button onclick="loadPopularMovies()">
+                Popular
+            </button>
+
+            <button onclick="loadTopRatedMovies()">
+                Top Rated
+            </button>
+
+            <button onclick="loadNowPlayingMovies()">
+                Now Playing
+            </button>
+
+            <button onclick="loadUpcomingMovies()">
+                Upcoming
+            </button>
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1>Find Your Favorite Movies</h1>
+
+        <p>
+            Search thousands of movies and discover something amazing.
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for a movie..."
+            >
+
+            <button onclick="searchMovies()">
+                🔍 Search
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Page Heading -->
+
+    <section class="movie-section">
+
+        <div class="section-header">
+
+            <h2 id="sectionTitle">
+                Popular Movies
+            </h2>
+
+        </div>
+
+
+        <!-- Loading -->
+
+        <div id="loading">
+            Loading movies...
+        </div>
+
+
+        <!-- Error -->
+
+        <div id="error"></div>
+
+
+        <!-- Movie Cards -->
+
+        <div
+            id="movieContainer"
+            class="movie-container">
+        </div>
+
+    </section>
+
+
+    <!-- Movie Details Modal -->
+
+    <div
+        id="movieModal"
+        class="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="close-btn"
+                onclick="closeModal()">
+                ×
+            </button>
+
+            <div id="movieDetails"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

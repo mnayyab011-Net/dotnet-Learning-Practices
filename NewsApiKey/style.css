@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #0f172a;
+
+    color: white;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background: #111827;
+
+    padding: 18px 6%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    border-bottom: 1px solid #263244;
+}
+
+
+.logo {
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #facc15;
+}
+
+
+.navbar nav {
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+}
+
+
+.navbar nav button {
+    background: transparent;
+
+    border: none;
+
+    color: #ddd;
+
+    padding: 9px 14px;
+
+    cursor: pointer;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+
+.navbar nav button:hover {
+    background: #374151;
+
+    color: white;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.8),
+            rgba(15, 23, 42, 0.95)
+        );
+}
+
+
+.hero h1 {
+    font-size: 48px;
+
+    margin-bottom: 15px;
+}
+
+
+.hero p {
+    color: #cbd5e1;
+
+    font-size: 18px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box {
+    max-width: 650px;
+
+    margin: auto;
+
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.search-box input {
+    flex: 1;
+
+    padding: 16px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+.search-box button {
+    padding: 16px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #eab308;
+
+    color: #111827;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.search-box button:hover {
+    background: #facc15;
+}
+
+
+/* =========================
+   MOVIE SECTION
+========================= */
+
+.movie-section {
+    max-width: 1300px;
+
+    margin: auto;
+
+    padding: 40px 20px;
+}
+
+
+.section-header {
+    margin-bottom: 25px;
+}
+
+
+.section-header h2 {
+    font-size: 30px;
+}
+
+
+/* =========================
+   MOVIE GRID
+========================= */
+
+.movie-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(200px, 1fr)
+        );
+
+    gap: 25px;
+}
+
+
+/* =========================
+   MOVIE CARD
+========================= */
+
+.movie-card {
+    background: #1e293b;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+.movie-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+.movie-card img {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+}
+
+
+.movie-info {
+    padding: 15px;
+}
+
+
+.movie-info h3 {
+    font-size: 18px;
+
+    margin-bottom: 10px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.movie-meta {
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #cbd5e1;
+
+    font-size: 14px;
+}
+
+
+.rating {
+    color: #facc15;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   LOADING
+========================= */
+
+#loading {
+    text-align: center;
+
+    padding: 30px;
+
+    color: #cbd5e1;
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+#error {
+    text-align: center;
+
+    color: #f87171;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    z-index: 1000;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background:
+        rgba(0, 0, 0, 0.85);
+
+    padding: 40px 20px;
+
+    overflow-y: auto;
+}
+
+
+.modal-content {
+    max-width: 850px;
+
+    margin: auto;
+
+    background: #1e293b;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    position: relative;
+}
+
+
+.close-btn {
+    position: absolute;
+
+    right: 20px;
+
+    top: 15px;
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 35px;
+
+    cursor: pointer;
+}
+
+
+.details {
+    display: flex;
+
+    gap: 30px;
+
+    margin-top: 20px;
+}
+
+
+.details img {
+    width: 280px;
+
+    border-radius: 10px;
+}
+
+
+.details-info {
+    flex: 1;
+}
+
+
+.details-info h2 {
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+
+.details-info p {
+    color: #cbd5e1;
+
+    line-height: 1.7;
+
+    margin: 15px 0;
+}
+
+
+.details-info span {
+    display: block;
+
+    margin: 8px 0;
+
+    color: #e2e8f0;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input,
+    .search-box button {
+        width: 100%;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .details img {
+        width: 100%;
+
+        max-width: 300px;
+
+        margin: auto;
+    }
+
+    .details-info h2 {
+        font-size: 25px;
+    }
+}
