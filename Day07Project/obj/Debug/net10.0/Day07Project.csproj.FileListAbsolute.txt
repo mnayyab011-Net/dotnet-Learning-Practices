@@ -1,0 +1,15 @@
+/workspaces/dotnet-learning-log/Day07Project/obj/Debug/net10.0/Day07Project.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/dotnet-learning-log/Day07Project/obj/Debug/net10.0/Day07Project.AssemblyInfoInputs.cache
+/workspaces/dotnet-learning-log/Day07Project/obj/Debug/net10.0/Day07Project.AssemblyInfo.cs
+/workspaces/dotnet-learning-log/Day07Project/obj/Debug/net10.0/Day07Project.csproj.CoreCompileInputs.cache
+/workspaces/dotnet-learning-log/Day07Project/obj/Debug/net10.0/Day07Project.sourcelink.json
+/workspaces/dotnet-learning-log/Day07Project/bin/Debug/net10.0/Day07Project
+/workspaces/dotnet-learning-log/Day07Project/bin/Debug/net10.0/Day07Project.deps.json
+/workspaces/dotnet-learning-log/Day07Project/bin/Debug/net10.0/Day07Project.runtimeconfig.json
+/workspaces/dotnet-learning-log/Day07Project/bin/Debug/net10.0/Day07Project.dll
+/workspaces/dotnet-learning-log/Day07Project/bin/Debug/net10.0/Day07Project.pdb
+/workspaces/dotnet-learning-log/Day07Project/obj/Debug/net10.0/Day07Project.dll
+/workspaces/dotnet-learning-log/Day07Project/obj/Debug/net10.0/refint/Day07Project.dll
+/workspaces/dotnet-learning-log/Day07Project/obj/Debug/net10.0/Day07Project.pdb
+/workspaces/dotnet-learning-log/Day07Project/obj/Debug/net10.0/Day07Project.genruntimeconfig.cache
+/workspaces/dotnet-learning-log/Day07Project/obj/Debug/net10.0/ref/Day07Project.dll
