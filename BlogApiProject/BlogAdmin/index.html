@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBlog Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="admin-layout">
+    <aside class="sidebar">
+        <div class="brand">
+            My<span>Blog</span>
+        </div>
+        <div class="admin-label">
+            ADMIN PANEL
+        </div>
+        <nav>
+            <a href="#dashboard" class="active">📊 Dashboard</a>
+            <a href="#posts">📝 Posts</a>
+        </nav>
+        <button class="logout-btn" onclick="logout()">
+            Logout
+        </button>
+    </aside>
+    <main class="main-content">
+        <header class="topbar">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Manage your blog content</p>
+            </div>
+            <button class="refresh-btn" onclick="loadPosts()">
+                ↻ Refresh
+            </button>
+        </header>
+        <section class="stats">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    📝
+                </div>
+                <div>
+                    <p>Total Posts</p>
+                    <h2 id="totalPosts">0</h2>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    🌐
+                </div>
+                <div>
+                    <p>API Status</p>
+                    <h2 id="apiStatus">
+                        Checking...
+                    </h2>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    🔐
+                </div>
+                <div>
+                    <p>Account</p>
+                    <h2>Admin</h2>
+                </div>
+            </div>
+        </section>
+        <section class="posts-section" id="posts">
+            <div class="section-header">
+                <div>
+                    <span>
+                        CONTENT MANAGEMENT
+                    </span>
+                    <h2>
+                        All Posts
+                    </h2>
+                </div>
+                <button
+                    class="create-btn"
+                    onclick="openCreateModal()">
+                    + Create Post
+                </button>
+            </div>
+            <div id="message"></div>
+            <div
+                id="postsContainer"
+                class="posts-container">
+                <div class="loading">
+                    Loading posts...
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<div
+    id="postModal"
+    class="modal-overlay">
+    <div class="modal">
+        <button
+            class="close-btn"
+            onclick="closeModal()">
+            ×
+        </button>
+        <span
+            class="modal-label"
+            id="modalLabel">
+            NEW POST
+        </span>
+        <h2 id="modalTitle">
+            Create New Post
+        </h2>
+        <form id="postForm">
+            <input
+                type="hidden"
+                id="postId"
+            >
+            <label for="title">
+                Title
+            </label>
+            <input
+                type="text"
+                id="title"
+                placeholder="Enter post title"
+                required
+            >
+            <label for="imageUrl">
+                Image URL
+            </label>
+            <input
+                type="url"
+                id="imageUrl"
+                placeholder="https://example.com/image.jpg"
+            >
+            <small class="input-hint">
+                Paste a direct image URL for your post.
+            </small>
+            <div
+                id="imagePreview"
+                class="image-preview"
+                style="display: none;">
+                <img
+                    id="previewImage"
+                    src=""
+                    alt="Image Preview"
+                >
+            </div>
+            <label for="content">
+                Content
+            </label>
+            <textarea
+                id="content"
+                rows="7"
+                placeholder="Write your post content..."
+                required
+            ></textarea>
+            <div class="modal-buttons">
+                <button
+                    type="button"
+                    class="cancel-btn"
+                    onclick="closeModal()">
+                    Cancel
+                </button>
+                <button
+                    type="submit"
+                    class="save-btn"
+                    id="saveBtn">
+                    Create Post
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="dashboard.js"></script>
+</body>
+</html>

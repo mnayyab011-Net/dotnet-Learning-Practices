@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MyBlog | Discover & Learn</title>
+</head>
+<body>
+<div class="page-glow glow-one"></div>
+<div class="page-glow glow-two"></div>
+<header class="navbar">
+    <a href="index.html" class="logo">
+        My<span>Blog</span>
+    </a>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="#posts">Articles</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+<main>
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            WELCOME TO MYBLOG
+        </div>
+        <h1>
+            Ideas worth
+            <span>reading.</span>
+        </h1>
+        <p>
+            Explore thoughtful articles, practical development
+            knowledge and ideas that help you learn, build and grow.
+        </p>
+        <div class="hero-buttons">
+            <a href="#posts" class="primary-btn">
+                Explore Articles
+                <span>→</span>
+            </a>
+        </div>
+        <div class="hero-note">
+            <span>✦</span>
+            Knowledge • Ideas • Growth
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="floating-card card-one">
+            <span class="mini-icon">✦</span>
+            <div>
+                <strong>Learn</strong>
+                <small>New ideas</small>
+            </div>
+        </div>
+        <div class="main-visual-card">
+            <div class="visual-top">
+                <span>MYBLOG</span>
+                <span>2026</span>
+            </div>
+            <div class="visual-center">
+                <div class="visual-symbol">
+                    M
+                </div>
+                <div class="visual-line"></div>
+                <h3>
+                    Read.<br>
+                    Learn.<br>
+                    <span>Grow.</span>
+                </h3>
+            </div>
+            <div class="visual-bottom">
+                <span>ARTICLE</span>
+                <span>01</span>
+            </div>
+        </div>
+        <div class="floating-card card-two">
+            <span class="mini-icon">↗</span>
+            <div>
+                <strong>Grow</strong>
+                <small>Every day</small>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="posts-section" id="posts">
+    <div class="section-top">
+        <div>
+            <div class="section-label">
+                LATEST FROM THE BLOG
+            </div>
+            <h2>
+                Discover our
+                <span>articles.</span>
+            </h2>
+            <p>
+                Fresh content directly from the MyBlog database.
+            </p>
+        </div>
+        <button
+            class="refresh-btn"
+            onclick="loadPosts()">
+            <span>↻</span>
+            Refresh
+        </button>
+    </div>
+    <div
+        class="posts-grid"
+        id="postsContainer">
+        <div class="loading">
+            <div class="spinner"></div>
+            <p>
+                Loading articles...
+            </p>
+        </div>
+    </div>
+</section>
+<section class="about" id="about">
+    <div class="about-inner">
+        <div class="about-label">
+            ABOUT MYBLOG
+        </div>
+        <h2>
+            Built for people
+            <br>
+            who love to <span>learn.</span>
+        </h2>
+        <p>
+            MyBlog is a place where useful knowledge,
+            practical experiences and meaningful ideas
+            come together.
+        </p>
+        <a
+            href="#posts"
+            class="about-btn">
+            Start Reading →
+        </a>
+    </div>
+    <div class="about-mark">
+        <span>M</span>
+    </div>
+</section>
+</main>
+<footer>
+    <div class="footer-left">
+        <a href="index.html" class="logo">
+            My<span>Blog</span>
+        </a>
+        <p>
+            Ideas worth reading.
+        </p>
+    </div>
+    <div class="footer-right">
+        <p>
+            © 2026 MyBlog
+        </p>
+    </div>
+</footer>
+<script>
+const API_URL = "http://localhost:5095/api/Post";
+async function loadPosts() {
+    const container =
+        document.getElementById("postsContainer");
+    container.innerHTML = `
+        <div class="loading">
+            <div class="spinner"></div>
+            <p>Loading articles...</p>
+        </div>
+    `;
+    try {
+        const response = await fetch(API_URL, {
+            method: "GET"
+        });
+        if (!response.ok) {
+            throw new Error(
+                "Failed to load posts"
+            );
+        }
+        const posts =
+            await response.json();
+        if (!posts || posts.length === 0) {
+            container.innerHTML = `
+                <div class="empty-state">
+                    <div class="empty-icon">
+                        ✦
+                    </div>
+                    <h3>
+                        No articles yet
+                    </h3>
+                    <p>
+                        There are currently no posts
+                        available.
+                    </p>
+                </div>
+            `;
+            return;
+        }
+        container.innerHTML = "";
+        posts.forEach((post, index) => {
+            const card =
+                document.createElement("article");
+            card.className = "post-card";
+            card.innerHTML = `
+                <div class="card-image">
+                    ${
+                        post.imageUrl
+                        ? `
+                            <img
+                                src="${escapeHtml(post.imageUrl)}"
+                                alt="${escapeHtml(post.title || "Blog Post")}"
+                                loading="lazy"
+                            >
+                          `
+                        : `
+                            <div class="no-image">
+                                ✦
+                            </div>
+                          `
+                    }
+                </div>
+                <div class="card-number">
+                    ${String(index + 1).padStart(2, "0")}
+                </div>
+                <div class="card-category">
+                    ARTICLE
+                </div>
+                <h3>
+                    ${escapeHtml(
+                        post.title ||
+                        "Untitled Post"
+                    )}
+                </h3>
+                <p>
+                    ${escapeHtml(
+                        post.content ||
+                        "No content available."
+                    )}
+                </p>
+                <div class="card-footer">
+                    <span>
+                        MyBlog
+                    </span>
+                    <span class="arrow">
+                        ↗
+                    </span>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    }
+    catch (error) {
+        console.error(error);
+        container.innerHTML = `
+            <div class="empty-state error">
+                <div class="empty-icon">
+                    !
+                </div>
+                <h3>
+                    Unable to load articles
+                </h3>
+                <p>
+                    Please make sure your
+                    Blog API is running.
+                </p>
+                <button
+                    class="refresh-btn"
+                    onclick="loadPosts()">
+                    Try Again
+                </button>
+            </div>
+        `;
+    }
+}
+function escapeHtml(value) {
+    const div =
+        document.createElement("div");
+    div.textContent = value;
+    return div.innerHTML;
+}
+loadPosts();
+</script>
+</body>
+</html>
